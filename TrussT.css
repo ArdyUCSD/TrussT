@@ -1,0 +1,169 @@
+.jumbotron {
+	padding-left: 10px;
+    background-color: white;
+}
+.part {
+	width:45%;
+	display: inline-block;
+	text-align: center;
+}
+#headerphoto {
+    text-align: center;
+    padding-top: 10px;
+    width: 700px;
+}
+
+
+p {
+	font-family: verdana;
+	font-size: 125%;
+}
+h1 {
+	font-family: verdana;
+	font-weight: lighter;
+	color: white;
+	font-size: 45px;
+	line-height: 0px;
+	padding-top: 23px;
+}
+h2 {
+	font-family: verdana;
+	font-weight: lighter;
+	color: white;
+	font-size: 20px;
+	line-height: 0px;
+	word-spacing: 100%;
+}
+h3 {
+	font-family: verdana;
+	font-weight: lighter;
+	color: white;
+	display: inline-block;
+}
+h4 {
+	font-family: verdana;
+	font-weight: lighter;
+	color: white;
+	vertical-align: middle;
+	padding-left: 10px;
+	font-size: 20px
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	text-align: center;
+}
+li {
+    display: inline-block;
+    float: right;
+    color: white;
+	font-family: verdana;
+    font-weight: lighter;
+	font-size: 20px;
+}
+li a {
+    display: block;
+    color: white;
+    font-family: verdana;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+test {
+	display: block;
+    color: white;
+    font-family: verdana;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    text-decoration: none;
+    font-size: 125%;
+}
+/*THIS IS THE MENU CHANGE FOR MOBILE STUFF */
+
+ul.topnav li a:hover:not(.active) {
+    text-decoration: underline;
+}
+ul.topnav .active {
+	text-decoration: underline;
+}
+#icons {
+	height: 200px;
+	width: 200px;
+	vertical-align: middle;
+}
+a {
+	color: black;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	text-align: center;
+}
+
+ul.topnav li {float: center;}
+
+ul.topnav li a {
+  display: block;
+    color: black;
+    font-family: verdana;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+	text-decoration: underline;
+}
+ul.topnav li a:hover:not(.active) {
+	text-decoration: underline;
+}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:1080px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:1080px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+    padding-bottom: 15px;
+  }
+}
+li.icon{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+p2 {
+	text-align: center;
+	font-family: verdana;
+	font-size: 125%;
+}
