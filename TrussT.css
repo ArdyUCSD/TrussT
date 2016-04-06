@@ -57,7 +57,7 @@ ul {
 }
 li {
     display: inline-block;
-    float: right;
+    float: center;
     color: white;
 	font-family: verdana;
     font-weight: lighter;
@@ -120,6 +120,7 @@ ul.topnav li a {
     padding-bottom: 5px;
     padding-right: 8px;
     padding-left: 8px;
+    padding-top: 5px;
     text-decoration: none;
 }
 
@@ -135,7 +136,7 @@ ul.topnav li.icon {display: none;}
 @media screen and (max-width:1080px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
-    float: right;
+    float: middle;
     display: inline-block;
   }
 }
@@ -153,7 +154,7 @@ ul.topnav li.icon {display: none;}
   }
   ul.topnav.responsive li a {
     display: block;
-    text-align: right;
+    text-align: middle;
     padding-bottom: 15px;
   }
 }
