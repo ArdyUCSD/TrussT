@@ -11,8 +11,17 @@
     text-align: center;
     padding-top: 10px;
     width: 500px;
+    padding-bottom: 0px;
 }
-
+#teamphoto {
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
 
 p {
 	font-family: verdana;
@@ -38,15 +47,14 @@ h3 {
 	font-family: verdana;
 	font-weight: lighter;
 	color: white;
-	display: inline-block;
 }
 h4 {
 	font-family: verdana;
 	font-weight: lighter;
 	color: white;
-	vertical-align: middle;
-	padding-left: 10px;
-	font-size: 20px
+	font-size: 25px;
+    display: inline-block;
+    padding-bottom: 0px;
 }
 ul {
     list-style-type: none;
