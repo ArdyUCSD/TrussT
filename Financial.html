@@ -29,6 +29,7 @@
 		<div style="text-align:center">
 			<h5>Initial Cost Estimate<hr></h5>
 			<div id="myDiv" style=" text-align: center"><!-- Plotly chart will be drawn inside this DIV --></div>
+			<div id="myDiv2" style="text-align: center"></div>
 		</div>
 	</div>
 	<script>
@@ -36,17 +37,46 @@
     		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 		}
 		var data = [{
-		  values: [194.61,31.71,4337.7,820,360,3760,217.87,1155.46,5067.6,3500,720,7500,82200,3500],
-		  labels: ['Gear Support w/ Worm m=5','Permanent Magnet','S-Motor 6-9V','Building Block w/ bore','Rope Pulley (21mm)','Base Plate (90x45)','Locking Worm','Mini-Switch','Lead by the Inch','Spectre Fiber String, 80 lb.','Rope Pulley (12mm)','Aluminum Sheet','7/32" Diameter Tube x 36"','Spectre Fiber String, 80 lb.'],
+		  values: [194.61,31.71,4227.7,820,360,3760,217.87,1155.46,5067.6,3500,720,82200,3500,19624,15000,4096,528],
+		  labels: ['Gear Support w/ Worm m=5','Permanent Magnet','S-Motor 6-9V','Building Block w/ bore','Rope Pulley (21mm)','Base Plate (90x45)','Locking Worm','Mini-Switch','Lead by the Inch','Spectre Fiber String, 80 lb.','Rope Pulley (12mm)','7/32" Diameter Tube x 36"','Spectre Fiber String, 80 lb.','Water Jet','Aluminum Sheet','Linear Inch of Cut','Abrasive'],
 		  type: 'pie'
 		}];
-
 		var layout = {
-		  height: 600,
-		  width: 800
+			title: 'Percentage of Total Cost for Each Component',
+		    height: 600,
+		    width: 800
 		};
-
 		Plotly.newPlot('myDiv', data, layout);
+
+		var trace1 = {
+		  x: ['April 1','April 6'],
+		  y: [113364, 125378],
+		  name: 'Total Cost',
+		  type: 'scatter'
+		};
+		var data = [trace1];
+		var layout = {
+			height: 500,
+			width: 800,
+		    title: 'Total Estimated Cost of Construction',
+		    xaxis: {
+		        title: 'Date',
+		        titlefont: {
+		        family: 'Courier New, monospace',
+		        size: 18,
+		        color: '#7f7f7f'
+		      }
+		    },
+		    yaxis: {
+		      title: 'Cost [in $]',
+		      titlefont: {
+		        family: 'Courier New, monospace',
+		        size: 18,
+		        color: '#7f7f7f'
+		      }
+		    }
+		};
+		Plotly.newPlot('myDiv2', data, layout);
 	</script>
 </body>
 </html>
