@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="TrussT.css">
 	<title>Truss-T Engineering</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
 </head>
 <body bgcolor="#777777">
 	<div class="jumbotron">
@@ -15,7 +17,7 @@
 				<li class="icon">
     				<a href="javascript:void(0);" onclick="myFunction()">MENU ☰</a>
   				</li>
-				<li><a class="active" href="index.html">HOME</a></li>
+				<li><a href="index.html">HOME</a></li>
   				<li><a href="Design.html">DESIGN</a></li>
   				<li><a class="active" href="Financial.html">FINANCIAL</a></li>
  				<li><a href="Team.html">OUR TEAM</a></li> 
@@ -25,15 +27,26 @@
 	</div>
 	<div class="main">
 		<div style="text-align:center">
-			<img src="./Pictures/budget_1.png" id="budget">
-			<br>
-			<img src="./Pictures/budget_2.png" id="budget">
+			<h5>Initial Cost Estimate<hr></h5>
+			<div id="myDiv" style=" text-align: center"><!-- Plotly chart will be drawn inside this DIV --></div>
 		</div>
 	</div>
 	<script>
 		function myFunction() {
     		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 		}
+		var data = [{
+		  values: [194.61,31.71,4337.7,820,360,3760,217.87,1155.46,5067.6,3500,720,7500,82200,3500],
+		  labels: ['Gear Support w/ Worm m=5','Permanent Magnet','S-Motor 6-9V','Building Block w/ bore','Rope Pulley (21mm)','Base Plate (90x45)','Locking Worm','Mini-Switch','Lead by the Inch','Spectre Fiber String, 80 lb.','Rope Pulley (12mm)','Aluminum Sheet','7/32" Diameter Tube x 36"','Spectre Fiber String, 80 lb.'],
+		  type: 'pie'
+		}];
+
+		var layout = {
+		  height: 450,
+		  width: 600
+		};
+
+		Plotly.newPlot('myDiv', data, layout);
 	</script>
 </body>
 </html>
