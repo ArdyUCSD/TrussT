@@ -22,6 +22,10 @@
     padding-right: 10px;
     padding-top: 10px;
 }
+#budget {
+    padding: 20px;
+    width: 75%;
+}
 
 p {
 	font-family: verdana;
