@@ -126,7 +126,7 @@ ul.topnav .active {
 	vertical-align: middle;
 }
 a {
-	color: black;
+	color: white;
 }
 ul.topnav {
     list-style-type: none;
@@ -147,7 +147,7 @@ ul.topnav li a {
     padding-bottom: 10px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 5px;
+    padding-top: 10px;
     text-decoration: none;
 }
 
@@ -220,5 +220,6 @@ p2 {
     float: right;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     display: inline-block;
 }
