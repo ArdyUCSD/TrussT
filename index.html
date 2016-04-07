@@ -5,6 +5,14 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="TrussT.css">
 	<title>Truss-T Engineering</title>
+	<script type="text/javascript">
+    	var image1 = new Image()
+    	image1.src = "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/995333_1183570998320302_8440114199643463699_n.jpg?oh=646a2dc63a6af000095da9dae7ca3b24&oe=577B31BF"
+    	var image2 = new Image()
+    	image2.src = "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpl1/v/t34.0-12/12935380_10154165379940955_249225380_n.png?oh=a27aab221a73fd5cf016e50b67442f0d&oe=5707D3A1"
+    	var image3 = new Image()
+    	image3.src = "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12717975_1183572271653508_379406505325517570_n.jpg?oh=fec73796ae5222cfb38597d7874d9420&oe=578723E8"
+	</script>
 </head>
 <body bgcolor="#777777">
 	<div class="jumbotron">
@@ -24,7 +32,23 @@
   		</nav>
 	</div>
 	<div class="main">
-		<h1>...UNDER CONSTRUCTION...</h1>
+		<div style="text-align: center">
+			<h5>Welcome!<hr></h5>
+		</div>
+		<p><img src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/995333_1183570998320302_8440114199643463699_n.jpg?oh=646a2dc63a6af000095da9dae7ca3b24&oe=577B31BF" width="600" height="400" name="slide" /></p>
+		<script type="text/javascript">
+		        var step=1;
+		        function slideit()
+		        {
+		            document.images.slide.src = eval("image"+step+".src");
+		            if(step<3)
+		                step++;
+		            else
+		                step=1;
+		            setTimeout("slideit()",2500);
+		        }
+		        slideit();
+		</script>
 	</div>
 	<script>
 		function myFunction() {

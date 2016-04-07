@@ -203,3 +203,11 @@ p2 {
     text-align: center;
     display: inline-block;
 }
+#designphoto {
+    width: 50%;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fadein { position:relative; width:500px; height:332px; }
+.fadein img { position:absolute; left:0; top:0; }
