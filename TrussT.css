@@ -116,7 +116,7 @@ ul.topnav li a:hover:not(.active) {
 ul.topnav .active {
 	text-decoration: underline;
 }
-#icons {
+#icon {
 	height: 200px;
 	width: 200px;
 	vertical-align: middle;
